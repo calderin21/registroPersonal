@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="../opcional/registroPersonal.xsl" type="text/xsl"?>
+<registroPersonal xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:noNamespaceSchemaLocation="registroPersonal.xsd">
+
+    <!-- Empleados -->
+  <empleados>
+    <empleado codigo="E001">
+        <nombre>Juan Pérez</nombre>
+        <sexo>Masculino</sexo>
+        <contacto>
+            <email>juan.perez@empresa.com</email>
+        </contacto>
+        <departamento codigo="D001"/>
+    </empleado>
+    <empleado codigo="E002">
+        <nombre>Laura Gómez</nombre>
+        <sexo>Femenino</sexo>
+        <contacto>
+            <telefono>654789123</telefono>
+        </contacto>
+        <departamento codigo="D002"/>
+    </empleado>
+    <empleado codigo="E003">
+        <nombre>Ana Ruiz</nombre>
+        <sexo>Femenino</sexo>
+        <contacto>
+            <email>ana.ruiz@empresa.com</email>
+        </contacto>
+        <departamento codigo="D001"/>
+    </empleado>
+    <empleado codigo="E004">
+        <nombre>Carlos Sánchez</nombre>
+        <sexo>Masculino</sexo>
+        <contacto>
+            <telefono>611223344</telefono>
+        </contacto>
+        <departamento codigo="D003"/>
+    </empleado>
+    <empleado codigo="E005">
+        <nombre>Lucía Fernández</nombre>
+        <sexo>Femenino</sexo>
+        <contacto>
+            <email>lucia.fernandez@empresa.com</email>
+        </contacto>
+        <departamento codigo="D002"/>
+    </empleado>
+    <empleado codigo="E006">
+        <nombre>Mario Torres</nombre>
+        <sexo>Masculino</sexo>
+        <contacto>
+            <telefono>699998877</telefono>
+        </contacto>
+        <departamento codigo="D001"/>
+    </empleado>
+    <empleado codigo="E007">
+        <nombre>Sofía Ramírez</nombre>
+        <sexo>Femenino</sexo>
+        <contacto>
+            <email>sofia.ramirez@empresa.com</email>
+        </contacto>
+        <departamento codigo="D003"/>
+    </empleado>
+    <empleado codigo="E008">
+        <nombre>David Ortega</nombre>
+        <sexo>Masculino</sexo>
+        <contacto>
+            <telefono>655443322</telefono>
+        </contacto>
+        <departamento codigo="D004"/>
+    </empleado>
+    <empleado codigo="E009">
+        <nombre>Raquel Morales</nombre>
+        <sexo>Femenino</sexo>
+        <contacto>
+            <email>raquel.morales@empresa.com</email>
+        </contacto>
+        <departamento codigo="D004"/>
+    </empleado>
+    <empleado codigo="E010">
+        <nombre>Sergio Domínguez</nombre>
+        <sexo>Masculino</sexo>
+        <contacto>
+            <telefono>612345678</telefono>
+        </contacto>
+        <departamento codigo="D002"/>
+    </empleado>
+</empleados>
+
+
+    <!-- Consultores -->
+   <consultores>
+    <consultor codigo="C001">
+        <nombre>Lucía Bravo</nombre>
+        <sexo>Femenino</sexo>
+        <contacto>
+            <email>lucia.bravo@externa.com</email>
+        </contacto>
+        <departamento codigo="D001"/>
+        <empresaExterna>ConsultingPro</empresaExterna>
+    </consultor>
+    <consultor codigo="C002">
+        <nombre>Antonio Vidal</nombre>
+        <sexo>Masculino</sexo>
+        <contacto>
+            <telefono>600111222</telefono>
+        </contacto>
+        <departamento codigo="D003"/>
+        <empresaExterna>GlobalIT</empresaExterna>
+    </consultor>
+    <consultor codigo="C003">
+        <nombre>Carmen Nieto</nombre>
+        <sexo>Femenino</sexo>
+        <contacto>
+            <email>carmen.nieto@externa.com</email>
+        </contacto>
+        <departamento codigo="D002"/>
+        <empresaExterna>HRExperts</empresaExterna>
+    </consultor>
+    <consultor codigo="C004">
+        <nombre>Jorge Rivas</nombre>
+        <sexo>Masculino</sexo>
+        <contacto>
+            <telefono>677888999</telefono>
+        </contacto>
+        <departamento codigo="D004"/>
+        <empresaExterna>GlobalIT</empresaExterna>
+    </consultor>
+    <consultor codigo="C005">
+        <nombre>Natalia Lobo</nombre>
+        <sexo>Femenino</sexo>
+        <contacto>
+            <email>natalia.lobo@externa.com</email>
+        </contacto>
+        <departamento codigo="D001"/>
+        <empresaExterna>ConsultingPro</empresaExterna>
+    </consultor>
+</consultores>
+
+    <!-- Departamentos -->
+    <departamentos>
+        <!-- ... 4 departamentos aquí ... -->
+    <departamento codigo="D001" id="D001">
+        <nombre>RRHH</nombre>
+        <director>María López</director>
+        <empleados>E001 E003 E006</empleados>
+        <direccion>
+            <calle>Calle Mayor 10</calle>
+            <ciudad>Madrid</ciudad>
+            <codigoPostal>28001</codigoPostal>
+        </direccion>
+    </departamento>
+
+    <departamento codigo="D002" id="D002">
+        <nombre>IT</nombre>
+        <director>José Martínez</director>
+        <empleados>E002 E005 E010</empleados>
+        <direccion>
+            <calle>Av. América 123</calle>
+            <ciudad>Barcelona</ciudad>
+            <codigoPostal>08001</codigoPostal>
+        </direccion>
+    </departamento>
+
+    <departamento codigo="D003" id="D003">
+        <nombre>Marketing</nombre>
+        <director>Ana Pastor</director>
+        <empleados>E004 E007</empleados>
+        <direccion>
+            <calle>Gran Vía 45</calle>
+            <ciudad>Sevilla</ciudad>
+            <codigoPostal>41001</codigoPostal>
+        </direccion>
+    </departamento>
+
+    <departamento codigo="D004" id="D004">
+        <nombre>Ventas</nombre>
+        <director>Carlos Linares</director>
+        <empleados>E008 E009</empleados>
+        <direccion>
+            <calle>Paseo Colón 88</calle>
+            <ciudad>Valencia</ciudad>
+            <codigoPostal>46001</codigoPostal>
+        </direccion>
+    </departamento>
+</departamentos>
+   
+</registroPersonal>

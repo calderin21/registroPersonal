@@ -1,0 +1,24 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:include schemaLocation="tiposComunes.xsd"/>
+
+    <xs:complexType name="consultorType">
+        <xs:sequence>
+            <xs:element name="nombre" type="xs:string"/>
+            <xs:element name="sexo" type="xs:string"/>
+            <xs:element name="contacto" type="contactoType"/>
+            <xs:element name="departamento">
+                <xs:complexType>
+                    <xs:attribute name="codigo" type="xs:string" use="required"/>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="empresaExterna" type="xs:string"/>
+        </xs:sequence>
+        <xs:attribute name="codigo" type="xs:string" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="consultoresType">
+        <xs:sequence>
+            <xs:element name="consultor" type="consultorType" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

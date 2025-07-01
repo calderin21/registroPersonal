@@ -1,0 +1,18 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+   
+    <xs:include schemaLocation="empleados.xsd"/>
+    <xs:include schemaLocation="consultores.xsd"/>
+    <xs:include schemaLocation="departamentos.xsd"/>
+
+
+
+    <xs:element name="registroPersonal">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="empleados" type="empleadosType"/>
+                <xs:element name="consultores" type="consultoresType"/>
+                <xs:element name="departamentos" type="departamentosType"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
